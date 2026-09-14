@@ -1,0 +1,14 @@
+# Copyright (c) 2026 e-Yantra, IIT Bombay. All rights reserved.
+# These simulation files and source code are the intellectual property of e-Yantra,
+# IIT Bombay, provided solely for eYRC 2026-27 (Theme: Hola The Explorer).
+# Sharing or redistribution of this material, in whole or in part, is not permitted.
+
+# Overhead-camera pixel -> arena coordinates, in the frame /odom is published in
+# (origin at the arena's top-left corner, x right, y down, metres).
+float64 pixel_x
+float64 pixel_y
+---
+bool success
+string message
+float64 world_x
+float64 world_y

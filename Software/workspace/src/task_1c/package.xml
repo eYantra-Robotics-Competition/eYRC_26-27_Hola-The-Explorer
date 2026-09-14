@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!--
+  Copyright (c) 2026 e-Yantra, IIT Bombay. All rights reserved.
+  These simulation files and source code are the intellectual property of e-Yantra,
+  IIT Bombay, provided solely for eYRC 2026-27 (Theme: Hola The Explorer).
+  Sharing or redistribution of this material, in whole or in part, is not permitted.
+-->
+<package format="3">
+  <name>task_1c</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="srivenkateshwar@e-yantra.org">neo-erts</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>shape_interface</depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
