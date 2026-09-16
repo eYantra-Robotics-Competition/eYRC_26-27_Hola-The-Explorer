@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Boilerplate controller for the squirtle LeKiwi robot.
+Boilerplate controller for the HE bot.
 
 Fetches a shape from the get_shape service and builds a list of waypoints
 to trace it. Fill in the control loop to drive the robot through them.
