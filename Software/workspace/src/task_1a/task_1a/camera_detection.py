@@ -1,9 +1,9 @@
+#!/usr/bin/env python3
 # Copyright (c) 2026 e-Yantra, IIT Bombay. All rights reserved.
 # These simulation files and source code are the intellectual property of e-Yantra,
 # IIT Bombay, provided solely for eYRC 2026-27 (Theme: Hola The Explorer).
 # Sharing or redistribution of this material, in whole or in part, is not permitted.
 
-#!/usr/bin/env python3
 '''
 *****************************************************************************************
 *
@@ -244,6 +244,23 @@ def find_trapezoids(frame):
     trapezoids = []
 
     ##############  ADD YOUR CODE HERE  ##############
+    arena = frame[ARENA_Y0:ARENA_Y1, ARENA_X0:ARENA_X1].copy()
+
+    # making sure size of arena isn't 
+    if arena.size == 0 or arena.shape is not [720, 1280, 3]:
+        return binary, trapezoids
+    
+    lab_conv = cv2.cvtColor(frame, cv2.COLOR_BGR2Lab)
+
+    floor_color = []
+
+    for channel in range(0, 2):
+        hist = cv2.calcHist(images=[lab_conv], channels=channel, mask=None, histSize=[256], ranges=[0, 256])
+        floor_color.append(np.argmax(hist))
+
+    floor_color = np.asarray(floor_color, dtype=np.int32)
+
+    print()
 
     ##################################################
 
