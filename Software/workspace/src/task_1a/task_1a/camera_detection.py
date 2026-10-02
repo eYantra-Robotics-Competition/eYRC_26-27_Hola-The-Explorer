@@ -260,7 +260,11 @@ def find_trapezoids(frame):
 
     floor_color = np.asarray(floor_color, dtype=np.int32)
 
-    print()
+    diff = lab_conv.astype(np.int32) - floor_color
+
+    distance = np.sqrt(np.sum(diff ** 2, axis=2))
+
+    mask = (distance > SAND_DISTANCE).astype(np.uint8) * 255
 
     ##################################################
 
