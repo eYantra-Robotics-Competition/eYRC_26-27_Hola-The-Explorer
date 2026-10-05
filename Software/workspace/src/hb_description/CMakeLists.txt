@@ -12,6 +12,12 @@ install(PROGRAMS
   bin/task1a_camera
   bin/task1c_bridge
   bin/task1c_camera
+  bin/task2a_bridge
+  bin/task2a_camera
+  bin/task2b_bridge
+  bin/task2b_camera
+  bin/task2c_bridge
+  bin/task2c_camera
   bin/camera_stream
   DESTINATION lib/${PROJECT_NAME})
 

@@ -68,6 +68,9 @@ Stage 1 runs entirely in simulation; hardware arrives in Stage 2.
 | **1A** | Checkpoint detection with image processing     |    30     |
 | **1B** | Inverse kinematics of the holonomic drive      |    20     |
 | **1C** | PID control: point-to-point, square, circle    |    50     |
+| **2A** | Three robots, three goals: multi-robot control |    20     |
+| **2B** | Path planning around obstacles                 |    30     |
+| **2C** | Multi-robot planning without collisions        |    50     |
 
 ---
 
@@ -84,7 +87,12 @@ Stage 1 runs entirely in simulation; hardware arrives in Stage 2.
             ├── shape_interface/             # custom msgs / srvs
             ├── task_1a/task_1a/camera_detection.py
             ├── task_1b/task_1b/inverse_kinematics.py
-            └── task_1c/task_1c/sim_control.py
+            ├── task_1c/task_1c/sim_control.py
+            ├── task_2a/task_2a/path_follower.py
+            ├── task_2b/task_2b/path_planner.py
+            ├── task_2b/task_2b/path_follower.py
+            ├── task_2c/task_2c/path_planner.py
+            └── task_2c/task_2c/path_follower.py
 ```
 
 **Build cycle (every session)**
